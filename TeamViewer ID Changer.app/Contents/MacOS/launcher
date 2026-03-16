@@ -1,0 +1,4 @@
+#!/bin/bash
+DIR="$(cd "$(dirname "$0")" && pwd)"
+PYTHON=$(which python3 2>/dev/null || echo "/usr/bin/python3")
+exec "${PYTHON}" "${DIR}/app.py"
